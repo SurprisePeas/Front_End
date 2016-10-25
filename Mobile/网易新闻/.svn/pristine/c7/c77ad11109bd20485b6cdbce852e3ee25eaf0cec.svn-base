@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+        *{
+        	padding: 0;
+        	margin: 0;
+        }
+        body{
+            background: white;
+        }
+        header{
+        	width: 100%;
+        	height: 40px;
+        	background: #fff;
+        	padding: 10px 0 5px 0;
+        }
+        header img{
+        	height: 80%;
+        	margin: 0px auto;
+        	display: block;
+        }
+    </style>
+
+</head>
+<body>
+	<header>
+		<img src="../image/logo.png">
+	</header>
+	<script>
+apiready = function(){
+	// 引入导航条
+	nav();
+
+	// 引入frmaegroup
+	fgroup();
+
+}
+	
+// 引入frame组的方法
+function fgroup(){
+    // 设置状态变量
+    var sta=1;
+	api.openFrameGroup ({
+    name: 'group1',
+    background: '#fff',
+    // 开启
+    scrollEnabled: true,
+    rect: {
+         x: 0, 
+         y: 100, 
+         w: 'auto', 
+         h: 'auto'
+    },
+    index: 0,
+    frames: [{
+        name: 'frame1', 
+        url: 'frames/1.html',
+        bgColor: '#fff'
+    },{
+        name: 'frame2', 
+        url: 'frames/2.html', 
+        bgColor: '#fff'
+    },{
+        name: 'frame3', 
+        url: 'frames/3.html', 
+        bgColor: '#fff'
+    },{
+        name: 'frame4', 
+        url: 'frames/4.html', 
+        bgColor: '#fff'
+    }]
+}, function(ret, err){
+    // 判断状态
+    if (sta==1) {
+        sta=2;//改变状态变量
+        // 设置定时
+        setTimeout(function(){
+            // 500毫秒后状态变量变回1
+            sta=1;
+        },500)
+        // 改变导航条的参数
+        navigationBar.config({
+            key:'selectedIndex',
+            value:ret.index,
+        });
+    }
+    // if( ret ){
+         // alert( JSON.stringify( ret ) );
+    // }else{
+         // alert( JSON.stringify( err ) );
+    // }
+});
+}
+// 引入frame结束
+
+
+// 引入导航条函数
+function nav(){
+navigationBar = api.require('navigationBar');
+navigationBar.open({
+    y: 58,
+    w: api.frameWidth,
+    h: 42,
+    itemSize : {
+        w : 60
+    },
+    items: [{
+        title: '头条',
+        bg: '#FAFAFA',
+    },{
+        title: '娱乐',
+        bg: '#FAFAFA',
+    },{
+        title: '热点',
+        bg: '#FAFAFA',
+    },{
+        title: '体育',
+        bg: '#FAFAFA',
+    },{
+        title: '网易号',
+        bg: '#FAFAFA',
+    },{
+        title: '上海',
+        bg: '#FAFAFA',
+    },{
+        title: '财经',
+        bg: '#FAFAFA',
+    },{
+        title: '科技',
+        bg: '#FAFAFA',
+    },{
+        title: '汽车',
+        bg: '#FAFAFA',
+    },{
+        title: '时尚',
+        bg: '#FAFAFA',
+    }],
+    font: {
+        color: '#ACACAC',
+        colorSelected:'#DF3031'
+    },
+    fixedOn: api.frameName
+}, function(ret, err){   
+	// 改变framegroup相关参数
+	api.setFrameGroupIndex({
+	    name: 'group1',
+	    index: ret.index,
+	    scroll: true
+	}); 
+    // if( ret ){
+    //     alert( JSON.stringify( ret ) );
+    // }else{
+    //     alert( JSON.stringify( err ) );
+    // }
+});
+}
+// 引入导航条模块的函数结束    
+	</script>
+</body>
+</html>

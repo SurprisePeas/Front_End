@@ -1,0 +1,97 @@
+#big_todays{
+	position: relative;
+	width: 1210px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#big_todays #todays{
+	/*position: relative;
+	top: 475px;
+	left: 400px;*/
+	width: 1210px;
+}
+/*品牌盛典*/
+#big_todays #todays #mt{
+	position: absolute;
+	left: -1px;
+	top: 0;
+	z-index: 3;
+}
+#big_todays #todays #mt img{
+	height: 151px;
+}
+/*按钮*/
+#big_todays #todays .anniu{
+	display: none;
+}
+#big_todays #todays #box .abiaoqianL{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 28px;
+	height: 62px;
+	background: gray;
+	z-index: 3;
+	font-size: 25px;
+	line-height:62px ;
+	text-align: center;
+	opacity: 0.3;
+	font-family: simsun;
+	font-weight: 400;
+	text-decoration:none;
+	color:white;
+}
+#big_todays #todays #box .abiaoqianR{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 28px;
+	height: 62px;
+	background: gray;
+	z-index: 3;
+	font-size: 20px;
+	text-align: center;
+	line-height:62px ;
+	opacity: 0.3;
+	font-family: simsun;
+	font-weight: 400;
+	text-decoration:none;
+	color:white;
+}
+
+/*展示框*/
+#big_todays #todays #box{
+	width: 1005px;
+	height: 164px;
+	overflow: hidden;
+	position: relative;
+	left: 207px;
+}
+
+/*长  存放图片*/
+#big_todays #todays #bigsidel{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 164px;
+	width: 4150px;
+	list-style: none;
+}
+/*图片*/
+#big_todays #todays  li.fore1 a img{
+	float: left;
+	margin-right: 1px;
+}
+#big_todays #todays li.fore2 a img{
+	float: left;
+	margin-right: 1px;
+}
+#big_todays #todays li.fore3 a img{
+	float: left;
+	margin-right: 1px;
+}
+#big_todays #todays  li.fore4 a img{
+	float: left;
+	margin-right: 1px;
+}

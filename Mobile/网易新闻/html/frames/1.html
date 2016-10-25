@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script src='../../script/data.js'></script>
+<script src='../../script/api.js'></script>
+<script>
+	apiready = function(){
+        // 处理文章列表的位置
+        document.getElementById('newslist').style.marginTop = (api.winHeight/3.5)+'px';
+        // 调用轮播图函数
+        flash();
+        // 加载列表文章数据
+        loaddata();
+    }
+// 轮播图函数
+function flash(){
+    // picarr用来存储图片地址，indexarr用力存储图片对应文章的aid
+    var picarr = [],indexarr=[];
+    // 循环接受到的数据，将图片地址组合成一个数组
+    for(x in flashobj){
+        picarr.push(flashobj[x].imgurl);
+        indexarr.push(flashobj[x].aid);        
+    }
+    // 传入图片地址，实现轮播效果
+    UIScrollPicture = api.require('UIScrollPicture');
+    UIScrollPicture.open({
+    rect: {
+        x: 0,
+        y: 0,
+        w: api.winWidth,
+        h: api.winHeight / 3.5
+    },
+    data: {
+        paths: picarr,
+        captions: ['巡视组:中宣部有官员落实工作决策部署存差距', '澳门今年继续发放现金 永久居民每人九千澳元', '中铁总：中国高铁已掌握检测时速500公里技术', '盘点:哪些省委书记曾接受中纪委网站访谈']
+    },
+    styles: {
+        caption: {
+            height: 35,
+            color: '#E0FFFF',
+            size: 13,
+            bgColor: 'rgba(0,0,0,0.5)',
+            position: 'overlay'
+        },
+        indicator: {
+            align: 'center',
+            color: '#FFFFFF',
+            activeColor: '#DA70D6'
+        }
+    },
+    contentMode: 'scaleToFill',
+    interval: 3,
+    fixedOn: api.frameName,
+    loop: true,
+    fixed: false
+}, function(ret, err){
+    if (ret.eventType == 'click'){
+        // 点击图片的操作
+        localStorage.setItem('xuhao',indexarr[ret.index]);
+        api.openWin({
+            name: 'arc',
+            url: '../arc.html'
+        });
+        localStorage.setItem('xuhao',indexarr[ret.index]);
+    }
+});
+}
+// 轮播图函数结束
+</script>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    ul#newslist li{
+        width: 100%;
+        overflow: hidden;
+        list-style: none;
+        border-bottom:1px solid #999;
+        padding: 5% 0; 
+    }
+    #newslist li img.news{
+        float: left;
+        width: 30%;
+        margin-right: 3%;
+    }
+    #newslist li h3{
+        font-size: 5vw;
+        line-height: 1.2em;
+    }
+    #newslist li p.description{
+        color: #999;
+        font-size: 3vw;
+    }
+</style>
+<ul id="newslist">
+    <li>
+        <img src="../../image/feiji.jpg" class="news">
+        <h3>巴铁放弃武直10中国订单被抢</h3>
+        <p class="description">土耳其新任国防部长菲克里·厄舍克表示，巴基斯坦和土耳其正在就巴基斯坦进口这款直升机进行谈判</p>
+    </li>
+</ul>
+
+<!-- 接受文章列表里的数据 -->
+<script>
+    function loaddata(){
+        // 循环接受到的数据
+        for(x in hotinfo){
+            var sta = '<li aid="'+hotinfo[x].aid+'"><img src="'+hotinfo[x].imgurl+'" class="news"><h3>'+hotinfo[x].title+'</h3><p class="description">'+hotinfo[x].description+'</p></li>';
+            // 将新建的li追加到ul中
+           $api.append(document.getElementById('newslist'),sta);
+        }
+        // 循环所有li,给每个li加单价事件
+        var lis = $api.domAll('#newslist li');
+        for(var i=0;i<lis.length;i++){
+            lis[i].onclick = function(){
+                api.openWin({
+                    name: 'arc',
+                    url: '../arc.html'
+                });
+                localStorage.setItem('xuhao',this.getAttribute('aid'));
+            }
+        }
+    }
+</script>
+</body>
+</html>

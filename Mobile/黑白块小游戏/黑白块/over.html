@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		body,html{
+			background: black;
+		}
+		h1{
+			margin-top: 50%;
+			font-size: 7vw;
+			color: white;
+			text-align: center;
+		}
+		h1 span{
+			color: red;
+			font-size: 6vw;
+		}
+		a{
+			display: block;
+			font-size: 5vw;
+			margin-top: 10%;
+			width: 40%;
+			text-align: center;
+			line-height: 2em;
+			background: white;
+			margin:0 auto;
+			color: black;
+			text-decoration: none;
+		}
+	</style>
+	<script src='script/jquery-1.7.2.min.js'></script>
+	<script>
+		$(function(){
+			var time=localStorage.getItem('shi');
+			// 输出
+			$('span').html(time);
+			if (time<10) {
+				$('span').css('color', 'green');
+			}
+		})
+	</script>
+</head>
+<body>
+	<h1>Game Over!<br/><br/>用时：<span></span></h1>
+	<br/>
+	<br/>
+	<a href="index.html">再来一次！</a>
+</body>
+</html>

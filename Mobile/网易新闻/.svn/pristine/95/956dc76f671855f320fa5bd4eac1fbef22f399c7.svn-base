@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	background: #fff;
+}
+li{
+	list-style: none;
+	font-size: 17px;
+	padding: 20px 0;
+	height: 80px;
+	width:95%;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 10px;	
+}
+li img{
+	width: 100px;
+	display: block;
+	height:60px;
+	float: left;
+	margin: 10px;
+}
+li p{
+	float: left;
+	width: 200px;
+	height: 60px;
+	margin-top: 10px;
+}
+li.heng{
+	height: auto;
+	overflow: hidden;
+}
+li.heng p{
+	width: 400px;
+	height:20px;
+	float: none;
+	margin-left: 10px;
+}

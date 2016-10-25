@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+	color: #666;
+}
+body,input,button{
+	font-family: "微软雅黑","Hiragino Sans GB";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+/*头部Logo*/
+header{
+	width: 100%;
+	background: url(../image/headbg.jpg) repeat-x left  bottom;
+}
+header .logo-con{
+	width: 1210px;
+	height: 200px;
+	margin: 0 auto;;
+}

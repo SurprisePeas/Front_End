@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<script>
+	apiready = function(){
+	    // 轮播图
+	    flash()
+	    document.getElementById('text').style.marginTop = api.winHeight/2.6+'px';
+	   	// 抓到所有ul
+	   	var hs = document.getElementsByTagName('ul');
+	   	for(var i=0;i<hs.length;i++){
+	   		// 给每个加一个单击事件
+	   		hs[i].onclick = function(){
+	   			var index = this.getAttribute('data-index');
+	   			// 将信息存到本地
+	   			api.setPrefs({
+				    key: 'aid',
+				    value: index
+				});
+	   			// 打开新窗口，用来展示这个标题对应的文章内容
+	   			api.openWin({
+				    name: 'arc',
+				    url: '../arc.html',
+				    pageParam: {
+				        name: 'test'
+				    }
+				});
+	   		}
+	   	}
+	}
+
+function flash(){
+	var UIScrollPicture = api.require('UIScrollPicture');
+UIScrollPicture.open({
+    rect: {
+        x: 0,
+        y: 0,
+        w: api.winWidth,
+        h: api.winHeight / 2.6
+    },
+    data: {
+        paths: [
+        'widget://image/flashs/one10 (1).jpg', 
+        'widget://image/flashs/one10 (2).jpg', 
+        'widget://image/flashs/one10 (3).jpg', 
+        'widget://image/flashs/4.jpg', 
+        'widget://image/flashs/5.jpg', 
+        'widget://image/flashs/6.jpg', 
+        'widget://image/flashs/7.jpg', 
+        ],
+        captions: ['习近平:不允许以任何理由拒收军转干部', '王儒林:已有2万多人次主动退赃1亿7千万', '铁总:高铁提速没有问题 是否提速尚需充分论证', '落马厅官雷政富获3次记功行政奖励 减刑10个月']
+    },
+    styles: {
+        caption: {
+            height: 35,
+            color: '#FFFFFF',
+            size: 13,
+            bgColor: 'rgba(0,0,0,0.2)',
+            position: 'overlay'
+        },
+        indicator: {
+            align: 'center',
+            color: '#FFFFFF',
+            activeColor: '#DA70D6'
+        }
+    },
+    placeholderImg: 'widget://res/slide1.jpg',
+    contentMode: 'scaleToFill',
+    interval: 3,
+    fixedOn: api.frameName,
+    loop: true,
+    fixed: false
+}, function(ret, err){
+    // if( ret ){
+    //      alert( JSON.stringify( ret ) );
+    // }else{
+    //      alert( JSON.stringify( err ) );
+    // }
+});
+}
+</script>
+
+
+<!-- 新闻列表 -->
+
+<ul id="text">
+	<li>
+		<img src="../../image/flashs/one2.jpg">
+       <p>
+       黄光裕回归尚需时日 国美已被"老板娘"再造
+       </p>
+	</li>
+	<li>
+        <img src="../../image/flashs/one5.jpg">
+       <p>原河北省邢台市委书记王爱民涉案逾5000万</p>
+    </li>
+	<li>
+	   <img src="../../image/flashs/one.jpg">
+       <p>习近平曾对考生说：考上可喜考不上也不用悲观</p>
+	</li>
+    <!-- 第二张 -->
+	<li>
+		<img src="../../image/flashs/one1.jpg">
+       <p>律师法院被打调查结果公布:法警滥用强制手段</p>
+	</li>
+
+	<li>
+		<img src="../../image/flashs/one3.jpg">
+       <p>上海地荒 开发商宁可“作死”不愿“早死”</p>
+	</li>
+    <li class="heng">
+        <p>济南赤狐生幼崽&nbsp;其中一只浑身黑色</p>
+        <img src="../../image/flashs/one7.jpg">
+        <img src="../../image/flashs/one8.jpg">
+        <img src="../../image/flashs/one9.jpg">
+    </li>
+    <li>
+        <img src="../../image/flashs/one4.jpg">
+       <p>中国海监失踪飞机在朱家尖大青山坠毁</p>
+    </li>
+    <li>
+        <img src="../../image/flashs/one5.jpg">
+       <p>曝辽宁司机遇查车钻草丛死亡 警方:无肢体接触</p>
+    </li>
+    <li>
+        <img src="../../image/flashs/one5.jpg">
+       <p>阿尔法狗之父否认中国版人机大战:暂无比赛计划</p>
+    </li>
+</ul>
+
+
+</body>
+</html>

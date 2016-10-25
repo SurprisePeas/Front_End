@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>打地鼠</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="script/jquery1.77.min.js.js" type="text/javascript" charset="utf-8"></script>
+	<script src="script/js.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="bg">
+		<div class="didongs">
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+			<div class="border">
+				<img src="image/dishu.png" class="dishu"/>
+				<img src="image/didong.png" class="didong"/>
+			</div>
+		</div>
+	</div>
+	<h2>打到&nbsp;&nbsp;<span class="shu">0</span>&nbsp;&nbsp;只</h2>
+	<p class="time"><span>0.0</span>秒</p>
+</body>
+</html>

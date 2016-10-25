@@ -1,0 +1,613 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑",Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+div,h1,h2,h3,p,td,th,dl,dd,dt,ul,ol,li{
+	font-size: 12px;
+}
+h1,h2,h3{
+	text-align: center;
+}
+p{
+	font-weight: lighter;
+}
+li,em,i{
+	list-style: none;
+}
+em,i{
+	font-style: normal;
+}
+/*注册栏*/
+header{
+	position: relative;
+}
+#headernav{
+	background: #000000;
+	width: 100%;
+}
+#headernav .head_content{
+	width: 1210px;
+	height: 90px;
+	margin: 0 auto;
+}
+#headernav .head_content .logo{
+	float: left;
+}
+.logo_brand{
+	width: 100px;
+	padding: 35px 0 0 0;
+	display: block;
+}
+#headernav .head_Main{
+	margin-left: 135px;	
+}
+#headernav .head_Main .Main_top{
+	height: 26px;
+	padding: 5px 0;
+	line-height: 26px;
+}
+#headernav .Main_top .Top_Left{
+	float: left;
+}
+#headernav .Main_top .Top_Left span{
+	color: #fff;
+	padding-left: 5px 0;
+}
+#headernav .Main_top .Top_Left a{
+	padding-left: 0 5px;
+	color: #26a8e2;
+}
+#headernav .Main_top .Top_Left span{
+	display: inline-block;
+	margin: 0 4px;
+}
+/*右侧*/
+#headernav ul.Top_Right_T{
+	margin-right: 0;
+	float: right;
+}
+#headernav .Top_Right li{
+	float: left;
+	padding: 0 30px;
+	background: url(../Images/shu.jpg)no-repeat right center;
+}
+#headernav .Top_Right li a{
+	color: #fff;
+}
+#headernav .Top_Right li span{
+	color: #26A8E2;
+	font-family: '"黑体"';
+	font-weight: 700;
+}
+/*居中下半部分*/
+#headernav .Main_bottom .Main_bottom_Right{
+	float: left;
+	margin-left: -20px;
+}
+#headernav .Main_bottom li.abp a{
+	height: 54px;
+	color: #FFFFFF;
+	padding-left: 20px;
+	display: block;
+	padding-right: 21px;
+	height: 54px;
+	font-size: 14px;
+	
+}
+#headernav .Main_bottom a i{
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid #fff;
+	display: block;
+	margin-top: -28px;
+	margin-left: 65px;
+	transition: all .8s;
+}
+#headernav .Main_bottom li.xiala{
+	position: relative;
+	z-index: 99;
+}
+#headernav .Main_bottom li.xiala a:hover{
+	background: #fff;
+	color: #000000;
+}
+#headernav .Main_bottom li:hover i{
+	border-bottom: 5px solid #16A8BE;
+	margin-top: -35px;
+}
+/*商品分类-隐藏*/
+#headernav .Main_bottom .Nav-none{
+	display: none;
+	position: absolute;
+	top: 54px;
+	left: -110px;
+	width: 200px;
+}
+#headernav .Main_bottom .Nav-none ul{
+	position: relative;
+}
+#headernav .Main_bottom .Nav-none ul li.sub-a{
+	background-image: none;
+	width: 216px;
+	height: 29px;
+	border-bottom: 1px solid #f5f5f5;
+	padding-right: 10px;
+	background: #fff;
+}
+#headernav .Main_bottom .Nav-none ul li.sub-a a.first-a{
+	background: url(../Images/nav_right_black.png)no-repeat right center;
+}
+#headernav .Main_bottom .Nav-none ul li.sub-a a{
+	height: 16px;
+	color: #000;
+	font-size: 12px;
+	padding: 6px 18px 6px 20px;
+	text-align: right;
+	display: block;
+	line-height: 16px;
+}
+/*分类二级菜单*/
+#headernav .Main_bottom .Nav-none ul li.sub-a .sub-none{
+	position: absolute;	
+	left: 226px;
+	top: 0;
+	width: 1000px;
+	height: 300px;
+}
+/*分类二级菜单-结束*/
+#headernav .Main_bottom .Nav-none ul li.sub-a:hover{
+	background: #F9F9F9;
+}
+#headernav .Main_bottom .Nav-none ul li.sub-a a:hover{
+	color: #26A8E2;
+}
+/*商品分类-隐藏-结束*/
+
+/*网站导航*/
+#headernav .Main_bottom .NavMore{
+	display: none;
+	width: 968px;
+	height: 595px;
+	position: absolute;
+	left: -178px;
+	top: 54px;
+}
+/*隐藏=网站导航-结束*/
+
+#headernav .Main_bottom .Nav-none ul{
+	float: left;
+	width: 200px;
+	height: 54px;
+}
+#headernav .Main_bottom li{
+	display: inline-block;
+	float: left;
+	height: 40px;
+	line-height: 54px;
+	background: url(../Images/shu.jpg)no-repeat right 21px;
+}
+#headernav .Main_bottom li.hunt{
+	margin: 14px 0 0 10px;
+	background: none;
+}
+input.hunt-text{
+	height: 30px;
+	line-height: 30px;
+	color: #787878;
+	width: 210px;
+	border-radius: 0;
+	border:  0 none;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	text-indent: 1em;
+	display: block;
+	float: left;
+	outline: none;
+}
+#headernav .Main_bottom .hunt .btn{
+	width: 34px;
+	height: 30px;
+	cursor: pointer;
+	background: url(../Images/hunt.jpg);
+	border: 0 none;
+	border-radius: 0;
+	float: left;
+}
+#headernav .Main_bottom .redyuan{
+	display: block;
+	width: 7px;
+	height:7px;
+	background: #DC2828;
+	border-radius: 50%;
+	position: relative;
+	float: left;
+	left: -7px;
+	top: 25px;
+}
+/*购物车*/
+#headernav .Main_bottom .shop{
+	position: relative;
+	float: right;
+	width: 54px;
+	height: 54px;
+}
+#headernav .Main_bottom .shop .shop-show{
+	width: 54px;
+	height: 54px;
+	background: url(../Images/shop.jpg);
+	cursor: pointer;
+}
+#headernav .Main_bottom .shop .shop-show span.shop-sp{
+	color: #fff;
+	font-weight: 700;
+	display: block;
+	width: 16px;
+	float: right;
+	position: absolute;
+	top:5px;
+	text-align: center;
+	right: 5px;
+}
+#headernav .Main_bottom .shop .shop-hide{
+	width: 492px;
+	height: 50px;
+	padding: 10px;
+	color: #000000;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	border: 1px solid #ccc;
+	z-index: 99;
+	cursor: pointer;
+	display: none;
+	overflow-y: scroll;	/*超出Y轴显示滚动条*/
+}
+#headernav .Main_bottom .shop .shop-hide .hide-top{
+	text-align: right;
+	color: #9A9A9A;
+}
+#headernav .Main_bottom .shop .shop-hide .hide-top span{
+	color: #01a8dd;
+	font-weight: 700;
+	padding: 0 8px;
+}
+#headernav .Main_bottom .shop .shop-hide .hide-bot{
+	text-align: left;
+	color: #9A9A9A;
+}
+#headernav .Main_bottom .shop .shop-hide .hide-bot .gotoCartLine{
+	padding: 15px 0 5px;
+	text-align: right;
+}
+#headernav .Main_bottom .shop .shop-hide .hide-bot a{
+	display: block;
+	color: #9A9A9A;
+}
+#headernav .Main_bottom .shop:hover .shop-hide{
+	display: block;
+}
+/*购物车-结束*/
+
+/*3D特效 */
+#bdy{background:#000; 
+	overflow:hidden;
+	height: 880px;
+	width: 100%;
+}
+#stage {
+	width:200px; height:300px; position:relative; margin:0 auto; margin-top:150px;background:null;
+			
+	-webkit-transform:rotateX(-10deg) rotateY(0deg) perspective(2000px);
+	   -moz-transform:rotateX(-10deg) rotateY(0deg) perspective(2000px);
+	    -ms-transform:rotateX(-10deg) rotateY(0deg) perspective(2000px);
+	     -o-transform:rotateX(-10deg) rotateY(0deg) perspective(2000px);
+	        transform:rotateX(-10deg) rotateY(0deg) perspective(2000px);
+			
+	-webkit-transform-style:preserve-3d;
+	   -moz-transform-style:preserve-3d;
+	    -ms-transform-style:preserve-3d;
+	     -o-transform-style:preserve-3d;
+	    	transform-style:preserve-3d;
+}
+#shadow {
+	position:absolute; left:50%; top:50%; width:1200px; height:1200px; margin-left:-600px; margin-top:-600px;
+	
+	background:-webkit-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:   -moz-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:    -ms-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:     -o-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:        radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	
+	-webkit-transform:translateY(200px) rotateX(90deg);
+	   -moz-transform:translateY(200px) rotateX(90deg);
+	    -ms-transform:translateY(200px) rotateX(90deg);
+	     -o-transform:translateY(200px) rotateX(90deg);
+	        transform:translateY(200px) rotateX(90deg);
+}
+
+#stage dd {
+	
+	height:300px; width:200px; position:absolute; left:0; top:0; border:1px solid #666;
+			
+	-webkit-transition:500ms all ease;
+	   -moz-transition:500ms all ease;
+	    -ms-transition:500ms all ease;
+		 -o-transition:500ms all ease;
+	        transition:500ms all ease;
+}
+.over {
+	position:absolute; left:0; top:320px; width:200px; height:300px; overflow:hidden;
+	
+	-webkit-transition:2s all ease;
+	   -moz-transition:2s all ease;
+	    -ms-transition:2s all ease;
+		 -o-transition:2s all ease;
+	        transition:2s all ease;
+			
+	-webkit-transform:scale(1,-1);
+	   -moz-transform:scale(1,-1);
+	    -ms-transform:scale(1,-1);
+	     -o-transform:scale(1,-1);
+	        transform:scale(1,-1);
+			
+	background-size:100% 100%;
+	opacity:0;
+}
+/*3D特效 结束*/
+
+/*轮播图*/
+#LB-Area .LB-see{
+	width: 100%;
+	height: 1080px;
+	position: relative;
+	overflow: hidden;
+}
+#LB-Area .LB-see .pic-container {
+	height: 1080px;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#LB-Area .LB-see .pic-container .swiper-slid{
+	float: left;
+	width: 100%;
+}
+/*箭头按钮*/
+#LB-Area .LB-see .btn-JT{
+	width:;
+}
+#LB-Area .arrow-left{
+	width: 38px;
+	height: 66px;
+	position: absolute;
+	background: url(../Images/arrows_l.png)no-repeat 0 -82px;
+	top: 60%;
+	left: 10px;
+	display: none;
+}
+#LB-Area .arrow-right{
+	width: 38px;
+	height: 66px;
+	position: absolute;
+	background: url(../Images/arrows_r.png)no-repeat 0 -82px;
+	top: 60%;
+	right: 10px;
+	display: none;
+}
+/*文字区域*/
+.NavTab{
+	width: 1210px;
+	height: 68px;
+	margin: 0 auto;
+}
+.NavTab .Tabs{
+	width: 100%;
+	height: 68px;
+	margin: 0 auto;
+}
+.NavTab .Tabs a.tabs{
+	width: 33%;
+	height: 58px;
+	border-bottom: 3px solid #999999;
+	box-sizing: border-box;
+	position: relative;
+	color: #000000;
+	float: left;
+	margin-right: 4px;
+}
+.NavTab .Tabs a.tabs.mt{
+	color: #0a83d6;
+	border-bottom: 3px solid #0a83d6;
+	background: url(../Images/kvdown_arrow.png) no-repeat left top;
+}
+.NavTab .Tabs a.tabs h3{
+	font-size: 14px;
+	padding-top: 10px;
+	text-align: left;
+}
+/*轮播图-结束*/
+
+/*最近活动*/
+#R-Activity{
+	width: 100%;
+	margin: 0 auto;
+	background: #f1f4f9;
+}
+#R-Activity .Act-main{
+	width: 1210px;
+	position: relative;
+	margin: 0 auto;
+}
+#R-Activity .Act-main h3{
+	font-size: 24px;
+	padding: 15px 0;
+	font-weight: normal;
+}
+#R-Activity .Act-main a.arrow-left{
+	background: url(../Images/newACT/leftright-s.png) no-repeat left top;
+	width: 23px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	left: -40px;
+	top: 50%;
+}
+#R-Activity .Act-main a.arrow-right{
+	background: url(../Images/newACT/leftright-s.png) no-repeat right bottom;
+	width: 23px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	right: -40px;
+	top: 50%;	
+}
+#R-Activity .Act-main div.swiper-see{
+	height: 330px;
+	overflow: hidden;
+	position: relative;
+}
+#R-Activity .Act-main .swiper-see ul.swiper-wrapper{
+	width: 6050px;
+	height: 330px;
+	position: absolute;
+	left: 0;
+}
+#R-Activity .Act-main .swiper-see ul.swiper-wrapper li.swiper-slider{
+	width: 1210px;
+	height: 330px;
+	float: left;
+}
+#R-Activity .Act-main .swiper-see ul.swiper-wrapper li.swiper-slider a.Activebtn{
+	display: block;
+	float: left;
+}
+#R-Activity .Act-main .swiper-see ul.swiper-wrapper li.swiper-slider a.Activebtn.mrt{
+	margin-right: 15px;
+}
+#R-Activity .Act-main .swiper-see ul.swiper-wrapper li.swiper-slider a.Activebtn img{
+	width: 597px;
+	display: block;
+}
+/*小方块*/
+#R-Activity .Act-main .pagination{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 5px;
+	width: 100%;
+	overflow: hidden;
+}
+#R-Activity .Act-main .pagination .pagination-swith{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #cdccca;
+	margin: 0 3px;
+	cursor: pointer;
+}
+#R-Activity .Act-main .pagination .pagination-swith.mtt{
+	background: #0a83d6;
+}
+/*最近活动 结束*/
+
+/*新品发布*/
+#NewProduct{
+	width: 100%;
+	margin-bottom: 40px;
+	background: #fff;
+	overflow: hidden;
+}
+#NewProduct .NewProduct_main{
+	width: 1210px;
+	margin: 0 auto;
+}
+#NewProduct .NewProduct_main h3{
+	font-size: 24px;
+	padding: 20px 0;
+	font-weight: normal;
+	color: #333;
+}
+#NewProduct .NewProduct_main li{
+	float: left;
+	width: 295px;
+	height: 382px;
+	margin-right: 10px;
+}
+#NewProduct .NewProBlock .TXT{
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	z-index: 11;
+	color: #666666;
+}
+#NewProduct .NewProBlock .TXT h3{
+	text-align: left;
+	padding: 5px 0 ;
+	color: #000000;
+	font-size: 24px;
+	font-weight: normal;	
+}
+#NewProduct .NewProBlock .TXT .vice1{
+	margin: 5px 0 ;
+	font-size: 16px;
+}
+#NewProduct .NewProBlock .TXT .vice2{
+	font-size: 14px;
+	color: #00549f;
+}
+/*翻转图片*/
+#NewProduct .TD{
+	width: 295px;
+	height: 382px;
+	display: block;
+}
+#NewProduct .NewProBlock{
+	position: relative;
+	perspective: 500px;/*添加景深*/
+}
+#NewProduct .NewProBlock .NewPreserve1{
+	position: absolute;
+	left: 0;
+	transition: all 1s; 
+	transform-style: preserve-3d;/*定义3D样式*/
+	-webkit-backface-visibility:hidden ;
+	-moz-backface-visibility:hidden ;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;/*背对显示器，就隐藏*/
+	transform: rotateY(0deg);
+
+}
+#NewProduct .NewProBlock .NewPreserve2{
+	position: absolute;
+	left: 0;
+	transition: all 1s;
+	transform-style: preserve-3d;/*定义3D样式*/
+	-webkit-backface-visibility:hidden ;
+	-moz-backface-visibility:hidden ;
+	-ms-backface-visibility:hidden ;
+	backface-visibility:hidden ;/*背对显示器，就隐藏*/
+	transform: rotateY(-180deg);/*翻转180*/
+}
+/*移入*/
+#NewProduct .TD:hover .NewPreserve1{
+	transform: rotateY(180deg);
+	
+}
+#NewProduct .TD:hover .NewPreserve2{
+	transform: rotateY(0deg);
+}
+/*新品发布-结束*/
+#MainBlock{
+	width: 100%;
+	height: 1200px;
+	background: #F1F4F9;
+}

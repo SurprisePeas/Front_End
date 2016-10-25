@@ -1,0 +1,674 @@
+/*全局reset*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "宋体";
+	text-decoration: none;
+}
+
+/*链接字体*/
+a{
+	color: #000033;	
+}
+
+a:hover{
+	color: #a10000;
+	text-decoration: none;
+}
+
+.tu-none{
+	display: none;
+}
+/*顶端注册信息栏*/
+div#ding{
+	width: 100%;
+	height: 31px;
+	background: #F7F7F7;
+}
+
+/*顶端*/
+div#dingnei{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*顶端内部span标签*/
+div#dingnei span{
+	font-size: 12px;
+	font-family: "宋体";
+	color: #808080;
+	margin-right: 10px;
+	line-height: 32px;
+}
+
+/*顶端右侧*/
+#dingneiyou{
+	width: 550px;
+	float: right;
+	position: relative;
+}
+
+#wode,#bangzhu,#wangzhan{
+	background: url(images/xiao.png) no-repeat 50px 9px;
+	float: left;
+	width: 63.4px;
+	height: 24px;
+}
+
+#shouji{
+	background: url(images/xiao.png) no-repeat 53px -20px;
+	float: left;
+	width: 65px;
+	height: 24px;
+}
+
+#zaixian{
+	background: url(images/kefu.png) no-repeat 50px;
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+
+div#weixin{
+	width: 50px;
+	float: right;
+	padding: 5px 0;
+	
+}
+
+div#huodong{
+	width: 980px;
+	/*margin: 0 auto;*/
+	margin-left: -62px;
+}
+
+/*LOGO---第三行*/
+#logoA{
+	width: 1200px;
+	overflow: hidden;
+	margin: 20px auto 0;
+}
+
+/*第三行LOGO图标*/
+#san1{
+	background: url(images/xiao.png) no-repeat 0px -59px;
+	width: 166px;
+	height: 47px;
+	margin-left:30px ;
+	float: left;
+}
+
+#san1 a{
+	display: block;
+	width: 166px;
+	overflow: hidden;
+}
+
+#san2{
+	margin-left: 500px;
+	width: 558px;
+	margin-top: 16px;
+}
+
+
+
+/*主体大框*/
+#dakuang{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*logo图片*/
+#logo{
+	width: 1200px;
+	margin:0px auto 10px;
+	
+}
+
+
+/*热门搜索*/
+
+#renmensousuo{
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.hotword{
+	width: 440px;
+	padding-top: 5px;
+	line-height: 18px;
+	color: #727171;
+	float: right;
+}
+
+.hotword p a{
+	padding-left: 5px;
+}
+
+
+.hotword p a:hover{
+	color: #727171;
+}
+
+
+
+/*导航栏*/
+#daohang{
+	background: #EFEFEF;
+	height: 50px;
+	width: 980px;
+	margin:20px auto;
+	text-align: center;
+}
+
+
+/*导航栏链接*/
+#daohang a{
+	line-height: 50px;
+	width: 80.5px;
+	height: 50px;
+	display: block;
+	float: left;
+	text-align: center;
+	font-family: "微软雅黑";
+	text-decoration: none;
+	/*border: 1px solid red;*/
+	color: #727271;
+	font-size: 17px;
+	margin: 0 auto;
+}	
+
+
+#daohang a:hover{
+		background:#E5E6E6 ;
+}
+
+
+
+#daohang #daohangfenlei{
+	width: 260px;
+	background: #B81C22;
+	color:white ;
+	font-weight: 700;
+}
+/*导航结束*/
+
+
+
+
+
+/*中间-上,清单-轮播图-大块区域-开始*/
+
+#list dd a:hover{
+	background: #edeeee;
+}
+
+#center{
+	width: 1200px;
+	height: 492px;
+	margin: 0 auto;
+	
+}
+/*左侧清单*/
+#list{
+	width: 260px;
+	height: 482px;
+	float: left;
+	position: relative;
+	
+}
+/*清单*/
+#list dl{
+	width: 258px;
+	line-height: 16px;
+	padding-top: 10px;
+	border: 1px solid #c8c8c9;
+	border-bottom: none;
+	line-height: 16px;
+}
+#list h3 a{
+	color: #B81C22;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 20px;
+	font-size: 14px;
+	position: absolute;
+	left: 35px;
+	top: -10px;
+	background: white;
+}
+/*T恤*/
+#list dl{
+	line-height: 16px;
+	margin-top:15px;
+	padding-top: 10px;
+	position: relative;
+}
+#list dl dt {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #A3A2A2;
+	padding: 10px 0px 0px 37px;
+	color: #A3A2A2;
+}
+#list dl dt a{
+	color: #A3A2A2;
+	font-size: 14px;
+	line-height: 20px;
+	
+}
+/*印花/素色/跑步/POLO等小标签*/
+#list dl dd{
+	padding: 5px 0px 10px 30px;
+	border-bottom: 1px solid #C8C8C9;
+}
+/*印花*/
+#list dl dd .trackyinhua{
+	color: #B81C22;
+	background: none;
+}
+
+#list dl dd a{
+	display: inline-block;
+	padding: 2px 5px;
+}
+
+/*左侧购物清单结束*/
+
+
+/*中间轮播图区域*/
+#lunbo{
+	width: 710px;
+	height: 475px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+/*中间轮播图区域结束*/
+
+
+/*右侧图片推荐*/
+#youlia{
+	width: 210px;
+	height: 475px;
+	float: right;
+	margin-top: 10px;
+}
+
+/*右上上装推荐图*/
+#youshang{
+	border: solid 1px #C9C9C9;
+	border-bottom: none;
+	float: left;
+	display: none;
+}
+/*右下下装推荐图*/
+#youxia{
+	border: solid 1px #C9C9C9;
+	display: none;
+	float: left;
+}
+/*右侧图片推荐结束--------------------------------------*/
+
+
+/*分割区1-*/
+div#fenge{
+	width: 1200px;
+	height: 10px;
+	margin:auto;
+}
+/*分割区1结束*/
+
+
+/*当季推荐大框体--开始*/
+div #diyi{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+/*当季推荐大框体--结束*/
+
+
+/*推荐H标题*/
+h2{
+	width: 1200px;
+	font-size: 17px;
+	font-family: "微软雅黑";
+	color: #595757;
+	
+}
+
+/*当季推荐*/
+.hbiaoti{
+	width: 1200px;
+	padding-left: 35px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+
+
+/*图片推荐间距*/
+.tu1,.tu2,.tu3,.tu4,.tu5,.tu6,.tu7,.tu8/*#yinhua,#miantang*/{
+	margin-right: 10px;
+}
+
+/*当季推荐图片*/
+.tuijiantu a{
+	width: 232px;
+	float: left;
+	margin-top: 10px;
+}
+
+.tuijiantu img{
+	float: left;
+}
+
+
+/*第二大框box*/
+
+
+.tuijiantu2{
+	margin: 0 20px;
+	float: left;
+}
+
+div#dier{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+.dier div#hbiaoti2{
+	width: 1200px;
+	padding-left: 35px;
+	line-height: 40px;
+	font-weight: bold;
+}
+/*第二大框box结束*/
+
+
+
+/*------第三框 下装推荐*/
+/*第三主题框*/
+#disan{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto 0px;
+	
+	
+}
+#disan h2{
+	padding-left: 35px;	
+	font-size: 17px;
+	font-family: "微软雅黑";
+	color: #595757;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+
+ul.ultu{
+	height: 232px;
+	margin-top: 10px;	
+}
+
+#disan li{
+	list-style: none;
+	float: left;
+	margin: 0 10px 0px 0px;
+}
+
+#disan .li1{
+	margin: 0px;
+}
+
+/*第三框 下装推荐结束---------*/
+
+
+
+
+
+
+
+/*低端列表-批号*/
+#bottomd{
+	width: 980px;
+	height: auto;
+	overflow: hidden;
+	margin: 25px auto 0;
+}
+/*-----------列表*/
+
+
+#bottomd .vac{
+	height: 190px;
+	width: 980px;
+	margin: 0 auto;
+	float: left;
+	border: 1px solid #e0e0e1;
+	
+}
+
+#bottomd .vac ul{
+	color: #333;
+	
+}
+
+#bottomd .vac li.yes{
+	height: 140px;
+	width: 150px;
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+	color: #3e3a39;
+	border-right: 1px solid #e0e0e1;
+}
+
+#bottomd .vac li.no{
+	height: 140px;
+	width: 190px;
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+	color: #3e3a39;
+}
+
+
+#bottomd .vac p a{
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "微软雅黑";
+}
+
+
+.shang{
+	margin-bottom: 10px;
+}
+
+/*-----------列表结束-------------*/
+
+
+
+/*30天内退换货--...--*/
+.foot{
+	width: 980px;
+	height: 52px;
+	padding-top: 5px;
+}
+
+
+.foot ul li{
+	width: 238px;
+	height: 52px;
+	float: left;
+	margin-top: 30px;
+}
+
+.foot ul li.tui a{
+	width: 100%;
+	height: 30px;
+	margin-top: 11px;
+	display: block;
+	background: url(images/xiao.png)no-repeat 88px -127px;
+}
+
+.foot ul li.mai a{
+	width: 100%;
+	height: 30px;
+	margin-top: 11px;
+	display: block;
+	background: url(images/xiao.png)no-repeat scroll 70px -167px;
+}
+
+
+.foot ul li.huo a{
+	width: 100%;
+	height: 30px;
+	margin-top: 11px;
+	display: block;
+	background: url(images/xiao.png)no-repeat scroll 70px -167px;
+}
+
+.foot ul li.zai a{
+	width: 100%;
+	height: 52px;
+	margin-top: 11px;
+	display: block;
+	background: url(images/xiao.png)no-repeat scroll 70px -167px;
+	
+}
+/*30天内退换货结束------------...--*/
+
+/*批号----*/
+.footb{
+	width: 100%;
+	height: 33px;
+	border-top: 1px solid #3e3a39;
+	margin: 0 auto;
+}
+
+
+.footb p{
+	line-height: 25px;
+	color: #3E3A39;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+
+
+
+
+
+
+
+/*批号结束*/
+
+
+/*-----------诚信网站*/
+.sub{
+	width: 980px;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 10px;
+	
+}
+
+#subone{
+	position: absolute;
+	left: 90px;
+	top: 10px;
+}
+
+
+
+.sub a{
+	margin: 0 10px;
+}
+
+
+.sub a.m1{
+	width: 113px;
+	height: 42px;
+	float: left;
+	background: url(images/da.png)no-repeat 0 -581px;
+}
+.sub a.m2{
+	width: 156px;
+	height: 45px;
+	float: left;
+	background: url(images/da.png)no-repeat 0 -629px;
+}
+.sub a.m3{
+	width: 96px;
+	height: 42px;
+	float: left;
+	background: url(images/da.png)no-repeat 0 -675px;
+}
+.sub a.m4{
+	width: 101px;
+	height: 42px;
+	float: left;
+	background: url(images/da.png)no-repeat -91px -675px;
+}
+.sub a.m5{
+	width: 101px;
+	height: 42px;
+	float: left;
+	background: url(images/da.png)no-repeat -202px -675px;
+	
+}
+.sub a.m6{
+	width: 101px;
+	height: 42px;
+	float: left;
+	position: absolute;
+	left: 604px;
+}
+/*诚信网站-结束------------*/
+
+
+
+
+
+
+
+
+
+
+li{
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

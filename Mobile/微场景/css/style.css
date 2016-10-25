@@ -1,0 +1,263 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*音乐*/
+#music-pic{
+	position: fixed;
+	z-index: 100;
+	right: 7%;
+	top: 3%;
+	height: 5%;
+	animation: m 2s linear infinite;
+	-webkit-animation: m 2s linear infinite;
+}
+@keyframes m{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes m{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+/*一屏*/
+.swiper-slide.one{
+	background: url(../image/beijingone.gif) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100%;
+}
+.swiper-slide.one .pic1{
+	width: 90%;
+	position: absolute;
+	top: 38%;
+	left: 5%;
+	transform: rotate(10deg);
+	opacity:.7;
+}
+.swiper-slide.one .xuanzhuan{
+ 	position: absolute;
+	height: 100%;
+	opacity:.4;
+	animation: run 25s infinite linear;
+}
+@keyframes run{
+	from{
+		transform: rotate(0deg)}
+	to{
+		transform: rotate(360deg)}
+}
+.swiper-slide.one div{
+	display: inline;
+	position: absolute;
+	font-size:40px;
+	color: #fff;
+	font-family: "黑体";
+}
+.swiper-slide.one .zhuanye{
+	top: 12%;
+	right: 5%;
+}
+.swiper-slide.one .shuiba{
+	right: 10%;
+	top: 20%;
+}
+.swiper-slide.one .big{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 74%;
+	left: 4%;
+}
+.swiper-slide.one .sanjiao{
+	width: 80%;
+	position: absolute;
+	top: 0%;
+	left: -101%;
+	opacity: .6;
+}
+.swiper-slide.one .sanjiao2{
+	width: 80%;
+	left: -101%;
+	transform: rotate(180deg);
+	opacity: .6;
+	left: -101%;
+	position: absolute;
+}
+.swiper-slide.one .sanjiao3{
+	width: 80%;
+	position: absolute;
+	top: 0%;
+	left: -101%;
+	opacity: .6;
+}.swiper-slide.one .sanjiao4{
+	width: 80%;
+	position: absolute;
+	top: 0%;
+	left: -101%;
+	opacity: .6;
+}.swiper-slide.one .sanjiao5{
+	width: 80%;
+	position: absolute;
+	left: -101%;
+	top: 0%;
+	opacity: .6;
+}.swiper-slide.one .sanjiao6{
+	width: 80%;
+	position: absolute;
+	top: 0%;
+	left: -101%;
+	opacity: .6;
+}
+
+/*第二屏*/
+.swiper-slide.two{
+	background: url(../image/pink.jpg)no-repeat;
+	background-size:cover;
+	background-position: 50% 50%;
+}
+.swiper-slide.two .buwang{
+	width: 85%;
+	position: absolute;
+	left: 7%;
+	top: 10%;
+}
+.swiper-slide.two .vs{
+	width: 41%;
+	position:absolute;
+	left: 8%;
+	top: 24%;
+}
+.swiper-slide.two .ziwo{
+	width: 45%;
+	position:absolute;
+	left: 4%;
+	top: 37%;
+}
+.swiper-slide.two .basa{
+	width: 74%;
+	position: absolute;
+	left: 4%;
+	top:65%;
+}
+.swiper-slide.two .ren{
+	width: 80%;
+	position: absolute;
+	right: 0%;
+	top: 10%;
+}
+/*三屏*/
+.swiper-slide.three{
+	background:url(../image/o_1ainu422a1479q6f10g213ju62ml.jpg)no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.swiper-slide.three .bubian2{
+	width: 64%;
+	position: absolute;
+	left: 5%;
+	top: 25%;
+}
+.swiper-slide.three .sheying{
+	width: 60%;
+	position: absolute;
+	left: 5%;
+	top: 58%;
+}
+.swiper-slide.three .wuming1{
+	width: 17%;
+	position: absolute;
+	left: 0%;
+	top: 47%;
+}
+.swiper-slide.three .wuming2{
+	width: 42%;
+	position: absolute;
+	left: 0%;
+	top: 70%;
+}
+.swiper-slide.three .wuming3{
+	width: 20%;
+	position: absolute;
+	left: 59%;
+	top: 70%;
+
+}
+.swiper-slide.three .wuming4{
+	width: 15%;
+	position: absolute;
+	right: 0%;
+	top: 61%;
+}
+.swiper-slide.three .shan{
+	width: 40%;
+	position: absolute;
+	right: -13%;
+	top: 13%;
+	animation: flash 0.2s infinite;
+}
+@keyframes flash{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+/*第四屏*/
+.swiper-slide.four{
+	background: url(../image/o_1ainukvva1c68ign1mah1706fpg39.jpg) no-repeat;
+	background-size:cover;
+	background-position: 50% 50%;
+}
+.swiper-slide.four .gaibian{
+	width:75%;
+	position: absolute;
+	top: 19%;
+	left: 6%;
+}
+.swiper-slide.four .zuoping{
+	width: 61%;
+	position: absolute;
+	top: 59%;
+	left: 6%;
+}
+.swiper-slide.four .change{
+	width: 48%;
+	position: absolute;
+	top: 71%;
+	left: 7%;
+}
+.swiper-slide.four .renwu{
+	width: 70%;
+	position: absolute;
+	right: -6%;
+	top: 32%;
+}
+.swiper-slide.five{
+	background: url(../image/rain.gif)no-repeat;
+	background-size: cover;
+	background-position: 50% 50% ;
+}

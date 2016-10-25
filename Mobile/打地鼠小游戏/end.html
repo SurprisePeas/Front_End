@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script src="script/jquery1.77.min.js.js"></script>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background: url(image/bgimg.JPG)no-repeat;
+			background-size: 260%;
+		}
+		h1{
+			margin-top: 45%;
+			font-size: 6vw;
+			color: white;
+			text-align: center;
+		}
+		a{
+			font-size: 5vw;
+			width: 30%;
+			line-height: 2em;
+			text-align: center;
+			background: white;
+			color: black;
+			margin: 0 auto;
+			margin-top: 5%;
+			text-decoration: none;
+			display: block;
+		}
+	</style>
+	<script>
+	$(function(){
+		var t =localStorage.getItem('shijian');
+		$('h1 span').html(t);
+	})
+	</script>
+
+</head>
+<body>
+	<h1>GAME OVER! <br /><span>0</span>秒</h1>
+	<a href="index.html">点击重玩</a>
+</body>
+</html>

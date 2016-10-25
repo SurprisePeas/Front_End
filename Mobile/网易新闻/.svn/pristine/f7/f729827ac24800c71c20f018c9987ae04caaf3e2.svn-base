@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background: white;
+        }
+    </style>
+<script>
+    apiready = function(){
+        api.openWin({
+            // 引入名称
+            name: 'newsindex',
+            // 引入路径
+            url: 'html/newsindex.html',
+        });
+    } 
+</script>
+</head>
+<body>
+</body>
+</html>
