@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Goo-都市运动型人的购物中心-时髦搭配</title>
+		<link rel="stylesheet" type="text/css" href="css/touch_style.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<nav>
+			<div class="nav_left">
+				<!--Logo-->
+				<a href="" class="nav_logo"><img src="image/new-logo.jpg"/></a>
+				<!--分类-->
+				<a href=""><img src="image/nav-3.svg" alt="" /></a>
+				<a href=""><img src="image/nav-4.svg" alt="" /></a>
+				<a href=""><img src="image/nav-5.svg" alt="" /></a>
+				<a href=""><img src="image/nav-6.svg" alt="" /></a>
+				<a href=""><img src="image/nav-7.svg" alt="" /></a>
+				<a href=""><img src="image/nav-8.svg" alt="" /></a>
+				<a href=""><img src="image/nav-9.svg" alt="" /></a>
+			</div>
+			<!--右侧搜索.工具-->
+			<div class="nav_right">
+				<img src="image/btn_search.svg" alt="" />
+				<img src="image/btn_shoppingbag.svg" alt="" />
+			</div>
+		</nav>
+		<!--/#end头部导航-->
+		
+		<!--轮播-->
+		<div class="swiper-container" id="lunbo">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="image/1.jpg"/></div>
+		        <div class="swiper-slide"><img src="image/2.jpg"/></div>
+		        <div class="swiper-slide"><img src="image/3.jpg"/></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<!--/#end轮播-->
+		
+		<!--主要内容-->
+		<div id="top_main">
+			<!--图片内容显示区域-->
+			<div class="activity">
+				<!--左-->
+				<div class="activity_l">
+					<a href=""><img src="image/top_header_5.jpg" alt="" /></a>
+					<a href=""><img src="image/top_header_3.jpg" alt="" /></a>
+				</div>
+				<!--中-->
+				<div class="activity_m"><a href=""><img src="image/top_header_2.jpg"/></a></div>
+				<!--右-->
+				<div class="activity_r">
+					<a href=""><img src="image/top_header_1.jpg" alt="" /></a>
+					<a href=""><img src="image/top_header_4.jpg" alt="" /></a>
+				</div>
+			</div>
+			<!--/#end图片内容显示区域-->
+			
+			<!--底部灰色块-->
+			<div class="bottom"></div>
+			
+			<!--推荐品牌-->
+			<div class="recommend">
+				<!--标题-->
+				<p>
+					<span class="blod">推荐品牌</span><span class="arial">RECOMMENDED BRAND</span>
+				</p>
+				<!--品牌图片-->
+				<div class="recommend_main">
+					<div class="main_top">
+						<a href=""><img src="image/tuijian_1.jpg" alt="" /></a>
+						<a href=""><img src="image/tuijian_2.jpg" alt="" /></a>
+					</div>
+					<div class="main_bottom">
+						<a href=""><img src="image/tuijian_3.jpg" alt="" /></a>
+						<a href=""><img src="image/tuijian_4.jpg" alt="" /></a>
+						<a href=""><img src="image/tuijian_5.jpg" alt="" /></a>
+						<a href=""><img src="image/tuijian_6.jpg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+			<!--/#end推荐品牌-->
+			
+		</div>
+		<!--主要内容-->
+		
+		<footer>
+			<p>
+				移动端-flex布局-自适应
+			</p>
+				<!--<img class="beian" src="image/pic_wzbaxx.png"/>-->
+		</footer>
+		
+	</body>
+</html>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay : 2000,
+	autoplayDisableOnInteraction : false,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+  })
+  </script>
